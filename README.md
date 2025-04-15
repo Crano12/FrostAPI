@@ -7,16 +7,16 @@
 
 <h1 align="center">Frost SDK</h1>
 
-[**Frost SDK**](https://docs.li.fi/integrate-li.fi-sdk/li.fi-sdk-overview) provides a powerful toolkit for developers to enable seamless cross-chain and on-chain swaps and bridging within their applications. Our JavaScript/TypeScript SDK can be implemented in front-end or back-end environments, allowing you to build robust UX/UI around our advanced bridge and swap functionalities. Frost SDK efficiently manages all communications between our smart routing API and smart contracts and ensures optimal performance, security, and scalability for your cross-chain and on-chain needs.
+[**Frost SDK**](https://www.frostdefai.com/) provides a powerful toolkit for developers to enable seamless cross-chain and on-chain swaps and bridging within their applications. Our JavaScript/TypeScript SDK can be implemented in front-end or back-end environments, allowing you to build robust UX/UI around our advanced bridge and swap functionalities. Frost SDK efficiently manages all communications between our smart routing API and smart contracts and ensures optimal performance, security, and scalability for your cross-chain and on-chain needs.
 
-[**Frost SDK**](https://docs.li.fi/integrate-li.fi-sdk/li.fi-sdk-overview) features include:
+[**Frost SDK**](https://www.frostdefai.com/) features include:
 
-- All ecosystems, chains, bridges, exchanges, and solvers that [Frost](https://docs.li.fi/list-chains-bridges-dexs-solvers) supports
+- All ecosystems, chains, bridges, exchanges, and solvers that Frost supports
 - Complete functionality covering full-cycle from obtaining routes/quotes to executing transactions
 - Easy tracking of the route and quote execution through the robust event and hooks handling
 - Highly customizable settings to tailor the SDK to your specific needs including configuration of RPCs and options to allow or deny certain chains, tokens, bridges, exchanges, solvers
 - Supports widely adopted industry standards, including [EIP-5792](https://eips.ethereum.org/EIPS/eip-5792), [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612), [EIP-712](https://eips.ethereum.org/EIPS/eip-712), and [Permit2](https://github.com/Uniswap/permit2)
-- SDK ecosystem providers are based on industry-standard libraries ([Viem](https://viem.sh/), [Wallet Standard](https://github.com/wallet-standard/wallet-standard), [Bigmi](https://github.com/frostnance/bigmi))
+- SDK ecosystem providers are based on industry-standard libraries ([Viem](https://viem.sh/), [Wallet Standard](https://github.com/wallet-standard/wallet-standard), [Bigmi](https://github.com/lifinance/bigmi))
 - Support for arbitrary contract calls on the destination chain
 - Designed for optimal performance with tree-shaking and dead-code elimination, ensuring minimal bundle sizes and faster page load times in front-end environments
 - Compatibility tested with Node.js and popular front-end tools like Vite
@@ -70,7 +70,7 @@ See [examples](/examples) folder in this repository.
 
 ## Documentation
 
-Please checkout the [SDK documentation](https://docs.li.fi/integrate-li.fi-sdk/li.fi-sdk-overview) and our [API reference](https://apidocs.li.fi) for further information.
+Please checkout the [SDK documentation](https://www.frostdefai.com/) and our [API reference](https://www.frostdefai.com/) for further information.
 
 ## Changelog
 
