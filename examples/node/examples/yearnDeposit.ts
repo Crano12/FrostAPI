@@ -27,7 +27,7 @@ const { findDefaultToken } = (frostDataTypes as any).default
 
 const run = async () => {
   console.info('>> Starting Yearn Demo: Deposit WETH on Polygon')
-  console.info('>> Initialize LI.FI SDK')
+  console.info('>> Initialize FROST SDK')
 
   try {
     const privateKey = process.env.PRIVATE_KEY as Address

@@ -84,10 +84,10 @@ const run = async () => {
         'function getSourceAmountDefaultRetirement(address,address,uint256) external view returns (uint256 amountIn)',
         'function retireExactCarbonDefault(address, address, uint256, uint256, string, address, string, string, uint8)',
       ],
-      klimaContractRetiringEntityString: 'LI.FI',
+      klimaContractRetiringEntityString: 'FROST',
       klimaContractBeneficiaryAddress:
         '0x552008c0f6870c2f77e5cC1d2eb9bdff03e30Ea0',
-      klimaContractBeneficiaryString: 'LI.FI',
+      klimaContractBeneficiaryString: 'FROST',
       klimaContractRetirementMessage: 'Cross Chain Contract Calls',
       klimaContractFromMode: 0,
     }

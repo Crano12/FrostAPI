@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Sample project to showcase the usage of @lifi/sdk",
   "main": "examples/swap.ts",
-  "author": "LI.FI <github@li.finance>",
+  "author": "FROST <github@li.finance>",
   "license": "MIT",
   "dependencies": {
     "@lifi/data-types": "^6.10.1",

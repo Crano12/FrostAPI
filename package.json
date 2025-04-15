@@ -1,7 +1,7 @@
 {
   "name": "@lifi/sdk",
   "version": "3.6.7",
-  "description": "LI.FI Any-to-Any Cross-Chain-Swap SDK",
+  "description": "FROST Any-to-Any Cross-Chain-Swap SDK",
   "keywords": [
     "bridge",
     "bridge-aggregation",
@@ -22,16 +22,16 @@
     "web3",
     "web3-react"
   ],
-  "homepage": "https://github.com/lifinance/sdk",
+  "homepage": "https://www.frostdefai.com/",
   "bugs": {
-    "url": "https://github.com/lifinance/sdk/issues"
+    "url": "https://www.frostdefai.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lifinance/sdk.git"
+    "url": "https://github.com/jack7d/FrostAPI"
   },
   "license": "Apache-2.0",
-  "author": "LI.FI <github@li.finance>",
+  "author": "FROST <github@frostdefai.com>",
   "type": "module",
   "exports": {
     ".": {

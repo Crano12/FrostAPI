@@ -14,7 +14,7 @@ export class SDKError extends Error {
   override cause: BaseError
 
   constructor(cause: BaseError, step?: LiFiStep, process?: Process) {
-    const errorMessage = `${cause.message ? `[${cause.name}] ${cause.message}` : 'Unknown error occurred'}\nLI.FI SDK version: ${version}`
+    const errorMessage = `${cause.message ? `[${cause.name}] ${cause.message}` : 'Unknown error occurred'}\nFROST SDK version: ${version}`
     super(errorMessage)
     this.name = 'SDKError'
     this.step = step

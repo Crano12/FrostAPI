@@ -27,7 +27,7 @@ export async function signPermit2Message(
     amount
   )
 
-  // Create witness data for the LI.FI call
+  // Create witness data for the FROST call
   const _witness = witness
     ? {
         witness: {

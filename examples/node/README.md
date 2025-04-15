@@ -1,4 +1,4 @@
-# LI.FI SDK - Node Demo Examples
+# FROST SDK - Node Demo Examples
 
 This project presents a number of demos for [our SDK](https://github.com/lifinance/sdk) that you can run from the command line.
 

@@ -55,7 +55,7 @@ describe('SDKError', () => {
       }
 
       expect(() => testFunction()).toThrowError(
-        `[HTTPError] [ValidationError] Request failed with status code 400 Bad Request. Oops\nLI.FI SDK version: ${version}`
+        `[HTTPError] [ValidationError] Request failed with status code 400 Bad Request. Oops\nFROST SDK version: ${version}`
       )
     })
   })
@@ -130,7 +130,7 @@ describe('SDKError', () => {
       }
 
       expect(() => testFunction()).toThrowError(
-        `[UnknownError] There was an error\nLI.FI SDK version: ${version}`
+        `[UnknownError] There was an error\nFROST SDK version: ${version}`
       )
     })
 
@@ -142,7 +142,7 @@ describe('SDKError', () => {
       }
 
       expect(() => testFunction()).toThrowError(
-        `Unknown error occurred\nLI.FI SDK version: ${version}`
+        `Unknown error occurred\nFROST SDK version: ${version}`
       )
     })
 

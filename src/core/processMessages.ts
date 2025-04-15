@@ -48,7 +48,7 @@ const substatusMessages: Record<
     BRIDGE_NOT_AVAILABLE: 'Bridge communication is temporarily unavailable.',
     CHAIN_NOT_AVAILABLE: 'RPC communication is temporarily unavailable.',
     UNKNOWN_ERROR:
-      'An unexpected error occurred. Please seek assistance in the LI.FI discord server.',
+      'An unexpected error occurred. Please seek assistance in the FROST discord server.',
     WAIT_SOURCE_CONFIRMATIONS:
       'The bridge deposit has been received. The bridge is waiting for more confirmations to start the off-chain logic.',
     WAIT_DESTINATION_TRANSACTION:
