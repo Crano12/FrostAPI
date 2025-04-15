@@ -1,5 +1,5 @@
-import * as lifiDataTypes from '@lifi/data-types'
-import type { ContractCallsQuoteRequest, StatusResponse } from '@lifi/sdk'
+import * as frostDataTypes from '@frost/data-types'
+import type { ContractCallsQuoteRequest, StatusResponse } from '@frost/sdk'
 import {
   ChainId,
   CoinKey,
@@ -7,7 +7,7 @@ import {
   createConfig,
   getContractCallsQuote,
   getStatus,
-} from '@lifi/sdk'
+} from '@frost/sdk'
 import type { Address, Chain } from 'viem'
 import {
   http,
@@ -25,13 +25,13 @@ import { promptConfirm } from '../helpers/promptConfirm'
 import { checkTokenAllowance } from './utils/checkTokenAllowance'
 import { transformTxRequestToSendTxParams } from './utils/transformTxRequestToSendTxParams'
 
-const { findDefaultToken } = (lifiDataTypes as any).default
+const { findDefaultToken } = (frostDataTypes as any).default
 
 const run = async () => {
   console.info('>> Klima Retire Demo: Retire(burn) Carbon tokens to offset CO2')
 
   try {
-    console.info('>> Initialize LiFi SDK')
+    console.info('>> Initialize Frost SDK')
     const privateKey = process.env.PRIVATE_KEY as Address
 
     // NOTE: Here we are using the private key to get the account,
@@ -47,7 +47,7 @@ const run = async () => {
     const switchChains = [mainnet, arbitrum, optimism, polygon] as Chain[]
 
     createConfig({
-      integrator: 'lifi-sdk-example',
+      integrator: 'frost-sdk-example',
       providers: [
         EVM({
           getWalletClient: () => Promise.resolve(client),

@@ -1,11 +1,11 @@
-import type { LiFiStep } from '@lifi/sdk'
-import { getTokenAllowance, setTokenAllowance } from '@lifi/sdk'
+import type { FrostStep } from '@frost/sdk'
+import { getTokenAllowance, setTokenAllowance } from '@frost/sdk'
 import type { PrivateKeyAccount, PublicClient, WalletClient } from 'viem'
 
 const AddressZero = '0x0000000000000000000000000000000000000000'
 
 export const checkTokenAllowance = async (
-  contactCallsQuoteResponse: LiFiStep,
+  contactCallsQuoteResponse: FrostStep,
   account: PrivateKeyAccount,
   client: WalletClient
 ) => {

@@ -1,4 +1,4 @@
-import type { TransactionRequest } from '@lifi/sdk'
+import type { TransactionRequest } from '@frost/sdk'
 import type { Address, Hash } from 'viem'
 import type { PrivateKeyAccount, SendTransactionParameters } from 'viem'
 

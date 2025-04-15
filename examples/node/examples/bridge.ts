@@ -1,4 +1,4 @@
-import * as lifiDataTypes from '@lifi/data-types'
+import * as frostDataTypes from '@frost/data-types'
 import {
   ChainId,
   CoinKey,
@@ -6,7 +6,7 @@ import {
   createConfig,
   executeRoute,
   getRoutes,
-} from '@lifi/sdk'
+} from '@frost/sdk'
 import type { Address, Chain } from 'viem'
 import { http, createWalletClient } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
@@ -15,11 +15,11 @@ import 'dotenv/config'
 import { promptConfirm } from '../helpers/promptConfirm'
 import { reportStepsExecutionToTerminal } from '../helpers/reportStepsExecutionToTerminal'
 
-const { findDefaultToken } = (lifiDataTypes as any).default
+const { findDefaultToken } = (frostDataTypes as any).default
 
 async function run() {
   console.info('>> Starting Bridge Demo')
-  console.info('>> Initialize LiFi SDK')
+  console.info('>> Initialize Frost SDK')
 
   const privateKey = process.env.PRIVATE_KEY as Address
 
@@ -36,7 +36,7 @@ async function run() {
   const switchChains = [mainnet, arbitrum, optimism, polygon] as Chain[]
 
   createConfig({
-    integrator: 'lifi-sdk-example',
+    integrator: 'frost-sdk-example',
     providers: [
       EVM({
         getWalletClient: () => Promise.resolve(client),

@@ -1,4 +1,4 @@
-import * as lifiDataTypes from '@lifi/data-types'
+import * as frostDataTypes from '@frost/data-types'
 import {
   ChainId,
   CoinKey,
@@ -6,7 +6,7 @@ import {
   createConfig,
   executeRoute,
   getRoutes,
-} from '@lifi/sdk'
+} from '@frost/sdk'
 import type { Address, Chain } from 'viem'
 import { http, createWalletClient } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
@@ -15,7 +15,7 @@ import { promptConfirm } from '../helpers/promptConfirm'
 import 'dotenv/config'
 import { reportStepsExecutionToTerminal } from '../helpers/reportStepsExecutionToTerminal'
 
-const dataTypes = (lifiDataTypes as any).default
+const dataTypes = (frostDataTypes as any).default
 
 async function run() {
   console.info('>> Starting Swap Demo')
@@ -26,7 +26,7 @@ async function run() {
   // but you can also use a Mnemonic account - see https://viem.sh/docs/accounts/mnemonic
   const account = privateKeyToAccount(privateKey)
 
-  console.info('>> Initialize LiFi SDK')
+  console.info('>> Initialize Frost SDK')
 
   const client = createWalletClient({
     account,
@@ -35,7 +35,7 @@ async function run() {
   })
 
   createConfig({
-    integrator: 'lifi-sdk-example',
+    integrator: 'frost-sdk-example',
     providers: [
       EVM({
         getWalletClient: () => Promise.resolve(client),
